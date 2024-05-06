@@ -132,9 +132,9 @@ while run:
             elif options==6:
                 amount =int(input('Money:'))
                 sender_email=input('sender_email:')
-                recipient_email=input('recipt_email:')
+                recipie_email=input('recipt_email:')
                 for account in admin.account_list.values():
-                    if account.email==recipient_email:
+                    if account.email==recipie_email:
                         account.transfer_money(sender_email,amount,account)
                         break
                 else:
